@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href ="assets/css/style.css" rel ="stylesheet">
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Totally Trivial Trivia!</h1>
+        <div id="after_submit">
+            <h3>All Done!</h3>
+            <br>
+            <h4 id="correct_answers"></h4>
+            <h4 id="incoreect_answers"></h4>
+            <h4 id="unanswered"></h4>
+        </div>
+        <form name ="quiz" id ="quiz">
+            <br>
+            <h2>Time Remaining: 20 Seconds</h2>
+            <br>
+            <h2>What is the capital of California?</h2>
+            <input type="radio" name="question1" id="mc" value="Los Angeles"> Los Angeles
+            <input type="radio" name="question1" id="mc" value="Sacramento"> Sacramento
+            <input type="radio" name="question1" id="mc" value="San Diego"> San Diego
+            <input type="radio" name="question1" id="mc" value="San Francisco"> San Francisco
+            <br><br>
+            <h2>What is the capital of New York?</h2>
+            <input type="radio" name="question2" id="mc" value="New York"> New York
+            <input type="radio" name="question2" id="mc" value="Buffalo"> Buffalo
+            <input type="radio" name="question2" id="mc" value="Albany"> Albany
+            <input type="radio" name="question2" id="mc" value="Rochester"> Rochester
+            <br><br>
+            <h2>What is the capital of Texas?</h2>
+            <input type="radio" name="question3" id="mc" value="Houston"> Houston
+            <input type="radio" name="question3" id="mc" value="Dallas"> Dallas
+            <input type="radio" name="question3" id="mc" value="San Antonio"> San Antonio
+            <input type="radio" name="question3" id="mc" value="Austin"> Austin
+            <br><br>
+            <h2>What is the capital of Florida?</h2>
+            <input type="radio" name="question4" id="mc" value="Tallahassee"> Tallahassee
+            <input type="radio" name="question4" id="mc" value="Miami"> Miami
+            <input type="radio" name="question4" id="mc" value="Jacksonville"> Jacksonville
+            <input type="radio" name="question4" id="mc" value="Tampa"> Tampa
+            <br><br>
+            <h2>What is the capital of Wyoming?</h2>
+            <input type="radio" name="question5" id="mc" value="Casper"> Casper
+            <input type="radio" name="question5" id="mc" value="Laramie"> Laramie
+            <input type="radio" name="question5" id="mc" value="Cheyenne"> Cheyenne
+            <input type="radio" name="question5" id="mc" value="Gillette"> Gillette
+            <br><br>
+            <input type="button" id="button" value="Done">
+        </form>
+    </div>
+    <script src ="assets/javascript/app.js"></script>
+</body>
+</html>

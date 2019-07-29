@@ -1,0 +1,14 @@
+body {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Map_of_USA_with_state_names.svg/1200px-Map_of_USA_with_state_names.svg.png");
+}
+.container {
+    background-color: lightblue;
+    padding: 50px 0px 100px 0px;
+    text-align: center;
+}
+.heading {
+    font-size: 80px;
+}
+#after_submit {
+    display: none;
+}
