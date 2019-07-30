@@ -1,6 +1,4 @@
-$(document).ready(function() {
-    $("#button").on("click", function() {
-
+function runResults() {
     var question1 = document.quiz.question1.value;
     var question2 = document.quiz.question2.value;
     var question3 = document.quiz.question3.value;
@@ -9,7 +7,6 @@ $(document).ready(function() {
     var correct = 0;
     var incorrect = 0;
     var unanswered = 0;
-            
     if (question1 == "Sacramento") {
         correct++;
     } else if (question1 == "Los Angeles" || question1 == "San Diego" || question1 == "San Francisco") {
@@ -45,11 +42,31 @@ $(document).ready(function() {
     } else {
         unanswered++
     }
-    
-    document.getElementById("after_submit").style.visibility = "visible";
-    document.getElementById("quiz").style.visibility = "invisible";
-    document.getElementById("correct_answers").innerHTML ="Correct Answers: " + correct;
-    document.getElementById("incorrect_answers").innerHTML ="Incorrect Answers: " + incorrect;
-    document.getElementById("unanswered").innerHTML ="Unanswered: " + unanswered;
+    document.getElementById("after_submit").style.display = "block";
+    document.getElementById("quiz").style.visibility = "hidden";
+    document.getElementById("correct_answers").innerHTML = "Correct Answers: " + correct;
+    document.getElementById("incorrect_answers").innerHTML = "Incorrect Answers: " + incorrect;
+    document.getElementById("unanswered").innerHTML = "Unanswered: " + unanswered;
+};
+$(document).ready(function () {
+    $("#button").on("click", function () {
+        runResults()
+    });
 });
+$(document).ready(function () {
+    setTimeout(function () {
+        runResults()
+    }, 20 * 1000);
 });
+var number = 20;
+var intervalId;
+function run() {
+    clearInterval(intervalId);
+    intervalId = setInterval(decrement, 1000);
+}
+function decrement() {
+    number--;
+
+    $("#timer").html("Time Remaining: " + number);
+};
+run();

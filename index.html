@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href ="assets/css/style.css" rel ="stylesheet">
-    <script
-  src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div class="container">
         <h1 class="heading">Totally Trivial Trivia!</h1>
@@ -19,12 +20,12 @@
             <h3>All Done!</h3>
             <br>
             <h4 id="correct_answers"></h4>
-            <h4 id="incoreect_answers"></h4>
+            <h4 id="incorrect_answers"></h4>
             <h4 id="unanswered"></h4>
         </div>
-        <form name ="quiz" id ="quiz">
+        <form name="quiz" id="quiz">
             <br>
-            <h2>Time Remaining: 20 Seconds</h2>
+            <h2 id="timer"></h2>
             <br>
             <h2>What is the capital of California?</h2>
             <input type="radio" name="question1" id="mc" value="Los Angeles"> Los Angeles
@@ -59,6 +60,7 @@
             <input type="button" id="button" value="Done">
         </form>
     </div>
-    <script src ="assets/javascript/app.js"></script>
+    <script src="assets/javascript/app.js"></script>
 </body>
+
 </html>
